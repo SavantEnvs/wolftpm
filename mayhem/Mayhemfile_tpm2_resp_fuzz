@@ -1,0 +1,8 @@
+project: savantenvs/wolftpm
+target: tpm2_resp_fuzz-mined-5d826bf
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tpm2_resp_fuzz-mined-5d826bf/testsuite
+cmds:
+  - cmd: /mayhem/tpm2_resp_fuzz
+    libfuzzer: true
