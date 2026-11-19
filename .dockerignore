@@ -1,0 +1,4 @@
+# Keep the build context to the committed tree (.git included — the image must
+# carry the branch history). Local build output never belongs in the image.
+mayhem-build/
+ctrf-report.json
